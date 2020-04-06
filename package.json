@@ -1,0 +1,31 @@
+{
+  "name": "payments-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/undefinedschool/payments-api.git"
+  },
+  "keywords": [],
+  "author": "Nicolas Quiroz <nh.quiroz@gmail.com> (nicolasquiroz.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/undefinedschool/payments-api/issues"
+  },
+  "homepage": "https://github.com/undefinedschool/payments-api#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "node-fetch": "^2.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
