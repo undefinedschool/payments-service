@@ -1,7 +1,8 @@
 const express = require('express');
-const router = express.Router();
 const cors = require('cors');
 const generatePayment = require('../api/payments');
+
+const router = express.Router();
 
 router.all('*', cors());
 
