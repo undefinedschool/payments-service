@@ -1,6 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const generatePayment = require('../payments');
+const cors = require('cors');
+const generatePayment = require('../api/payments');
+
+router.all('*', cors());
 
 router.route('/mercadopago').post(async (req, res) => {
   const { paymentType } = req.query;
