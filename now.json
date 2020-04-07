@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [{ "src": "index.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/mercadopago",
+      "dest": "index.js",
+      "methods": ["OPTIONS"]
+    },
+    {
+      "src": "/mercadopago",
+      "dest": "index.js",
+      "methods": ["POST"]
+    }
+  ],
+  "env": {
+    "MP_TEST_ACCESS_TOKEN": "@mp_test_access_token",
+    "MP_ACCESS_TOKEN": "@mp_access_token",
+    "MP_BASE_URL": "@mp_base_url",
+    "IMG_URL": "@img_url"
+  }
+}
