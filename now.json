@@ -14,6 +14,7 @@
     }
   ],
   "env": {
+    "NODE_ENV": "@node_env",
     "MP_TEST_ACCESS_TOKEN": "@mp_test_access_token",
     "MP_ACCESS_TOKEN": "@mp_access_token",
     "MP_BASE_URL": "@mp_base_url",
