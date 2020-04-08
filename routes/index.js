@@ -6,7 +6,11 @@ const router = express.Router();
 
 router.all('*', cors());
 
-router.route('/mercadopago').post(async (req, res) => {
+router.get('/', (req, res) => res.sendFile('./public/index.html'));
+
+router.get('/health', (req, res) => res.sendStatus(200));
+
+router.post('/mercadopago', async (req, res) => {
   try {
     const { paymentType } = req.query;
     const init_point = await generatePayment(req.body, paymentType);
