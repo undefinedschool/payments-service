@@ -37,8 +37,8 @@ function generatePayment(data, paymentType) {
 
   return fetch(`${MP_BASE_URL}${MP_ACCESS_TOKEN}`, {
     method: 'POST',
-    body: JSON.stringify(preference),
-    headers: { 'Content-Type': 'application/json' }
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(preference)
   })
     .then(res => res.json())
     .then(res => res.init_point)
