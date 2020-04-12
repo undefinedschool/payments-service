@@ -15,7 +15,7 @@ router.post('/mercadopago', async (req, res) => {
     const { paymentType } = req.query;
     const init_point = await generatePayment(req.body, paymentType);
 
-    res.send(init_point);
+    res.json({ body: init_point});
   } catch (e) {
     console.error(e);
 
