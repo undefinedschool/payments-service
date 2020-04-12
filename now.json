@@ -15,7 +15,7 @@
     {
       "src": "/mercadopago",
       "dest": "index.js",
-      "methods": ["OPTIONS", "POST"]
+      "methods": ["OPTIONS", "POST", "HEAD"]
     }
   ],
   "env": {
