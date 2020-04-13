@@ -13,7 +13,7 @@ router.get('/health', (req, res) => res.sendStatus(200));
 router
   .route('/mercadopago')
   .head((req, res) => res.sendStatus(200))
-  .post('/mercadopago', async (req, res) => {
+  .post(async (req, res) => {
     try {
       const { paymentType } = req.query;
       const init_point = await generatePayment(req.body, paymentType);
