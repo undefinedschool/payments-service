@@ -6,8 +6,6 @@ const router = express.Router();
 
 router.all('*', cors());
 
-router.get('/', (req, res) => res.sendFile('./public/index.html'));
-
 router.get('/health', (req, res) => res.sendStatus(200));
 
 router
